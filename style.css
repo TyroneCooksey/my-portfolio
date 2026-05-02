@@ -129,3 +129,61 @@ button {
 button:hover {
   opacity: 0.85;
 }
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #6ee7b7;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #6ee7b7;
+}
+
+.card a {
+  color: #6ee7b7;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
