@@ -187,3 +187,39 @@ button:hover {
 .card a:hover {
   text-decoration: underline;
 }
+/* MOBILE */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  section {
+    padding: 4rem 1.2rem;
+  }
+}
+/* HERO ANIMATION */
+#hero h1,
+#hero p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+#hero p {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
